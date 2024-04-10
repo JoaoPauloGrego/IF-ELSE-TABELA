@@ -1,0 +1,79 @@
+<head>
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+
+
+
+        <script>
+            $sexo = prompt("Qual é o seu sexo?")
+            $idade = prompt("Qual é a sua idade")
+            if ($sexo == "Masculino" || $sexo == "masculino") {
+                if ($idade < 18) {
+                    alert("Menino")
+
+                }
+                else (alert("Homem"))
+            }
+            else {
+                if ($idade < 18) {
+                    alert("Menina")
+                }
+                else {
+                    alert("Mulher")
+                }
+            }
+
+            document.write("<table border = '1'>")
+            document.write("<tr>")
+            document.write("<td>", "sexo")
+            document.write("</td>")
+            document.write("<td", "idade")
+            document.write("</td>")
+            document.write("<td>", "Foto")
+            document.write("</td>")
+            document.write("</tr>")
+
+            document.write("<tr>")
+            document.write("<td>", $sexo)
+            document.write("</td>")
+            document.write("<td>", $idade)
+            document.write("</td>")
+            if (($sexo == "Masculino" || $sexo == "masculino") && $idade < 18){
+                document.write("<td> <img src= 'imgT/imgMO/menino.jpg'></td>")
+            }
+               if(($sexo == "Masculino" || $sexo == "masculino") && $idade > 17 ) {
+                  document.write("<td> <img src= 'imgT/ImgH/homem.jpg'></td>")
+               }
+            if (($sexo == "Feminino" || $sexo == "feminino") && $idade < 18 ) {
+                document.write("<td> <img src= 'imgT/imgMA/menina.jpg'></td>")
+            }
+                    
+                
+                if(($sexo == "Masculino" || $idade == "masculino") && $idade > 17)  {
+                    document.write("<td> <img src= 'imgT/imgM/mulher.jpg'></td>")
+                }    
+
+            
+
+            
+
+
+
+
+        </script>
+    </head>
+
+<body>
+    <table>
+
+
+    </table>
+
+</body>
+
+</html>
